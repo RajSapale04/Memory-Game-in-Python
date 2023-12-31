@@ -43,7 +43,7 @@ def game_won(revealed):
 def start_game_animation(board):
     """Starts game by randomly showing 5 squares"""
     mixer.init()
-    mixer.music.load("C:\\Users\\ELCOT\\Downloads\\Mario game.mp3") 
+    mixer.music.load("Background Music Files\Mario game.mp3") 
     mixer.music.set_volume(0.7)
     mixer.music.play(-1)
     coordinates = list(product(range(BOARD_HEIGHT), range(BOARD_WIDTH)))
@@ -71,7 +71,7 @@ def game_won_animation(board, revealed):
     """ Flashes background colors when the game is won"""
     messagebox.showinfo("Message","Hey  Player:)  YOU  WON!! ")
     mixer.init()
-    mixer.music.load("C:\\Users\\ELCOT\\Downloads\\won music.mp3") 
+    mixer.music.load("Background Music Files\won music.mp3") 
     mixer.music.set_volume(0.7)
     mixer.music.play()
     
